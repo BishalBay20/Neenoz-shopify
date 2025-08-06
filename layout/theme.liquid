@@ -296,6 +296,30 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+
+
+    {% if template == 'index' %}
+<script>
+  window.addEventListener('PandectesEvent_OnConsent', function(event) {
+    if (event.detail.consentType === 'new' || event.detail.consentType === 'stored') {
+      window.digitalDataLayer = {
+        environment: {
+          environmentVersion: 'V7',
+          coBrandedVersion: 'Bespoke'
+        },
+        page: {
+          pageType: "home page"
+        }
+      };
+    }
+  });
+</script>
+{% endif %}
+
+
+
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
