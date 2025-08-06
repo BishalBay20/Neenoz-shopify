@@ -146,6 +146,11 @@
         "type": "shopify://apps/webrex-converter/blocks/app-embed/065e70d9-d1e0-4d56-a8a3-a58701e43093",
         "disabled": false,
         "settings": {}
+      },
+      "15351435345818755577": {
+        "type": "shopify://apps/pandectes-gdpr/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
